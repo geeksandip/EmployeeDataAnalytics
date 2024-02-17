@@ -1,6 +1,6 @@
 SELECT * FROM project.employee;
 
--- Retrieve all employee in the Engineering department 
+-- Retrieve all employees in the Engineering department 
 select * from Employee where Department ='Engineering';
 
 -- Retrieve employee with a salary greater than 60000
@@ -19,7 +19,7 @@ select Department, Gender,  count(*) as Count
 from Employee
 group by Department, Gender;
 
--- Finding the Highest Paid Employee;
+-- Finding the highest-paid employee;
 select Department, Position, Salary
 From Employee
 order by Salary desc
